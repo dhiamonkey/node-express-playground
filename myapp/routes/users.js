@@ -4,17 +4,6 @@ var data = require("../db/dummy.json");
 const fs = require("fs");
 
 /* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
-});
-
-router.put("/user", (req, res) => {
-  res.send("Got a PUT request at /user");
-});
-
-router.delete("/user", (req, res) => {
-  res.send("Got a DELETE request at /user");
-});
 
 router.get("/data", (req, res) => {
   res.send(data.user);
